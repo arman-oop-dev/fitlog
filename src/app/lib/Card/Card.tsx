@@ -33,7 +33,7 @@ const Card = async () => {
             className="flex flex-col overflow-hidden rounded-2xl border border-transparent bg-[#20242E] transition-colors hover:border-[#C2F800]"
           >
             {/* Image with fixed aspect ratio */}
-            <div className="relative aspect-\[4\/3\] w-full">
+            <div className="relative aspect-[4/3] w-full">
               <Image
                 src={item.image}
                 alt={item.name}

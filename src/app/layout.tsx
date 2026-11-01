@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Oswald } from "next/font/google";
+import Footer from "./component/Footer/page";
+import Header from "./component/Header/Header";
+import MyPlanContext from "./ContextProvider/MyPlanContext";
 import "./globals.css";
 
-const geistSans = Geist({
+const oswald = Oswald({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -19,11 +17,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${oswald.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">
+        <MyPlanContext>
+          <Header />
+          {children}
+          <Footer />
+        </MyPlanContext>
+      </body>
     </html>
   );
 }

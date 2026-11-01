@@ -2,8 +2,6 @@
 
 A web app for browsing exercises, building a daily workout plan, and tracking progress. Built with Next.js, TypeScript, Tailwind CSS, and HeroUI.
 
-> Replace the `[bracketed]` placeholders with your project's real details.
-
 ## Features
 
 - Browse exercises with duration, calories burned, equipment, and rating
@@ -32,34 +30,6 @@ A web app for browsing exercises, building a daily workout plan, and tracking pr
 
 - Node.js 18 or newer
 - npm, yarn, or pnpm
-
-### Installation
-
-```bash
-git clone [your-repo-url]
-cd [project-folder]
-npm install
-```
-
-### Environment variables
-
-Create a `.env.local` file in the project root if your app needs any:
-
-```env
-# Example
-NEXT_PUBLIC_API_URL=[your-api-url]
-```
-
-### Run the app
-
-```bash
-npm run dev      # start the development server
-npm run build    # create a production build
-npm start        # run the production build
-npm run lint     # check code quality
-```
-
-Open [http://localhost:3000](http://localhost:3000).
 
 ## Project structure
 
@@ -129,16 +99,6 @@ See the `MyPlanCard` README for component-level details.
 | Images don't load               | Add the image host to `images.remotePatterns` in `next.config`. |
 | Stats don't change between tabs | Use `selectedKey` and `onSelectionChange` on `<Tabs>`.          |
 
-## Contributing
-
-1. Fork the repo and create a branch: `git checkout -b feature/your-feature`
-2. Commit your changes: `git commit -m "Add your feature"`
-3. Push and open a pull request
-
-## License
-
-`[MIT / your license]`
-
 ## Author
 
-`[Your name]` · `[GitHub / LinkedIn / email]`
+`Ariful Islam Arman`
